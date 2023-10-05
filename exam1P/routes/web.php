@@ -13,19 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Rutas tipo Peticion
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/login', function () {
+    return view('login');
 });
-
-Route::get('/form', function () {
-    return view('Formulario');
-});
-Route::get('/recu', function () {
-    return view('Recuerdos');
-});
-
 //Vita
-Route::view('/','welcome')-> name('apodoInicio');
-Route::view('/form','Formulario')-> name('apodoFormulario');
-Route::view('/recu','Recuerdos')-> name('apodoRecuerdos');
+Route::view('/','productos')-> name('apodoproductos');
