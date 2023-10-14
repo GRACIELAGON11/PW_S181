@@ -6,15 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('apodoInicio')}}">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="{{route('apodoFormulario')}}">Formulario</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('apodoVista1')}}">Vista1</a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{route('apodoInicio')}}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('apodoFormulario')}}">Formulario</a>
+        </li>
       </ul>
     </div>
   </div>
