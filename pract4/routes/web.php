@@ -1,7 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\diarioController;// instruccion que se necesita para hacer el controlador 
+ Route::controller(diarioController::class)->group(function(){
+    Route::get('/','metodoInicio')->name('apodoInicio');
+    Route::get('/form', 'metodoFormulario')->name('apodoFormulario');
+    Route::get('/recu','metodoRecuerdos')->name('apodoRecuedo');
+    Route::post('/guardarRe','guardarRe')->name('apodoguardarRe');
+});
+    
 /*
 //Rutas tipo Peticion
 Route::get('/', function () {
@@ -21,8 +28,4 @@ Route::view('/form','Formulario')-> name('apodoFormulario');
 Route::view('/recu','Recuerdos')-> name('apodoRecuerdos');
 Route::view('/v1','vista1')-> name('apodoVista1');
 */
-use App\Http\Controllers\diarioController;// instruccion que se necesita para hacer el controlador 
- 
-Route::get('/', [diarioController::class,'metodoInicio'])->name('apodoInicio');
-Route::get('/form', [diarioController::class,'metodoFormulario'])->name('apodoFormulario');
-Route::get('/recu', [diarioController::class,'metodoRecuerdos'])->name('apodoRecuedo');
+

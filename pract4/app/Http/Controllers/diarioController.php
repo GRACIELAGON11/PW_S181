@@ -11,9 +11,24 @@ class diarioController extends Controller//crear las funciones
 
     }
     public function metodoFormulario(){
-        return view('Formuario');
+        return view('Formulario');
     }
     public function metodoRecuerdos(){
         return view('Recuerdos');
+    }
+    public function guardarRe(Request $req){
+        /* return $req->all(); */
+        echo "<p>";
+        echo $req->ip();
+        echo " - ";
+        echo $req->path();
+        echo " - ";
+        echo $req->method();
+        echo " - ";
+        echo $req->input('txtTitulo');
+        echo " - ";
+        echo $req->url();
+        echo "<p>";
+
     }
 }
