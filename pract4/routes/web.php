@@ -6,14 +6,14 @@ use App\Http\Controllers\diarioController;// instruccion que se necesita para ha
     Route::get('/','metodoInicio')->name('apodoInicio');
     Route::get('/form', 'metodoFormulario')->name('apodoFormulario');
     Route::get('/recu','metodoRecuerdos')->name('apodoRecuedo');
-    Route::post('/guardarRe','guardarRe')->name('apodoguardarRe');
+    Route::post('/guardarRe','guardarRecuerdo')->name('apodoguardarRe');
 });
     
 /*
 //Rutas tipo Peticion
 Route::get('/', function () {
     return view('welcome');
-});
+}); 
 
 Route::get('/form', function () {
     return view('Formulario');

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing:content-box;
+}
+body{
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 80px;
+}
+.logo{
+    margin: 0%;
+    padding: auto;
+    width: 400px; /* ancho */
+    height: 300px; /* Alto */
+    position: relative;
+    top: 5px; ;/* Abajo*/
+    left: -25px; /*derecha*/
+}
+.carousel-item img {
+    width: 70%; /* Establecer el ancho deseado, por ejemplo, 100% para que todas las imágenes tengan el mismo ancho. */
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción original. */
+}
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.795);
+    color: rgb(3, 3, 3);
+    margin:auto;
+    width: 50%; /* Establecer el ancho deseado, por ejemplo, 100% para que todas las imágenes tengan el mismo ancho. */
+    height: auto;
+    background-color: #ffffff7a; /* Color de fondo de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados para darle un aspecto de tarjeta */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+}
+/* Estilo para el pie de página */
+footer {
+    background-color: #0f0e49;
+    color: #f7f7f7;
+    ;
+}
+.bi{
+    width: 40px;
+    height: 22px;
+}
+
